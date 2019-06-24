@@ -1,3 +1,133 @@
 /**
  * TODO(you): Add the CSS necessary to complete your final project.
  **/
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+   margin: 0;
+ }
+ 
+ .hidden {
+     display: none !important;
+ }
+ 
+ .screen {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #fdf5f5;
+     height: 100vh;
+     width: 100vw;
+ }
+ 
+ #create-button {
+     border: 2px solid black;
+     padding: 20px 50px;
+     background-color: white;
+     opacity: 50%;
+ }
+ 
+ .hover {
+     animation: fade-in 0.25s forwards;
+ }
+ 
+ @keyframes fade-in {
+   from {
+     background-color: white;
+     color: black;
+   } to {
+     background-color: black;
+     color: white;
+   }
+ }
+ 
+ #entry {
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     flex-grow: 1;
+     width: 100%;
+ }
+ 
+ .editing {
+     background: rgba(255, 255, 255, 0.5);
+ }
+ 
+ textarea {
+     width: 80%;
+     background: rgba(255, 255, 255, 0);
+     flex-grow: 1;
+     border: none;
+     outline: none;
+     font-family: 'Merriweather';
+     font-size: 20px;
+     font-weight: bold;
+     resize: none;
+ }
+ 
+ .large {
+     font-family: 'Merriweather';
+     font-size: 50px;
+     margin: 15px;
+ }
+ 
+ #date {
+     border-bottom: solid 2px black;
+     padding: 10px 20px;
+ }
+ 
+ .small {
+     font-family: 'Montserrat';
+     font-size: 20px;
+     margin: 30px;
+     font-weight: bold;
+ }
+ 
+ .controls {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 80px;
+     background-color: white;
+     width: 100vw;
+ }
+ 
+ .icon {
+     height: 30px;
+     width: 30px;
+     background-size: 100%;
+     height: 60px;
+     width: 60px;
+     opacity: 0.5;
+     margin-top: 10px;
+ }
+ 
+ #back {
+     background: url("../images/back.png") no-repeat;
+     margin-right: 100px;
+ }
+ 
+ #forward {
+     background: url("../images/forward.png") no-repeat;
+     margin-left: 100px;
+ }
+ 
+ #checked {
+     background: url("../images/checked.png") no-repeat;
+ }
+ 
+ #prompt {
+     margin: 10px;
+     font-family: 'Montserrat';
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ #home {
+     font-size: 20px;
+     font-family: 'Merriweather'
+ }
