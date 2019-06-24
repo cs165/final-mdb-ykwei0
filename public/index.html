@@ -2,13 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>CS193x Final Project</title>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <script src="/js/script.js" defer></script>
-    </script>
+    <title>Diary project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="js/home-view.js" defer></script>
+    <script src="js/diary-view.js" defer></script>
+    <script src="js/entry-view.js" defer></script>
+    <script src="js/prompts.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+    <section class = "screen hidden" id="home-view">
+        <div class="large">Create a Daily Journal</div>
+        <div class="small">Note: Your journal will be viewable and editable to anyone who has the link!</div>
+        <div class="small" id="create-button">CREATE A NEW JOURNAL</div>
+    </section>
+    <section class="screen hidden" id="journal-view">
+      <div id="entry">
+          <div class="large" id="date"></div>
+          <div id="prompt"></div>
+          <textarea id="contents"></textarea>
+      </div>
+      <div class="controls" id="navigation">
+          <div class="icon" id="back"></div>
+          <div id="home">HOME</div>
+          <div class="icon" id="forward"></div>
+      </div>
+      <div class="controls hidden" id="edit">
+          <div class="icon" id="checked"></div>
+      </div>
+    </section>
   </body>
 </html>
